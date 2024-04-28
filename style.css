@@ -1,0 +1,135 @@
+:root,
+body,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+p {
+  text-shadow: 2px 2px 10px white;
+}
+
+p#win {
+  border: none;
+  display: flex;
+  color: #00FFA7;
+  margin-top: 30px;
+  text-align: center;
+  justify-items: center;
+  text-shadow: 2px 2px 3px black;
+  font-family: 'Protest Revolution', sans-serif;
+}
+
+p,
+label,
+button,
+.stats {
+  border: 2px solid black;
+}
+
+table {
+  margin: 30px;
+  width: 300px;
+  height: 360px;
+  user-select: none;
+  border-radius: 10px;
+  table-layout: fixed;
+  background-color: black;
+  font-family: 'Protest Revolution', sans-serif;
+  box-shadow: 0 11px 15px -7px rgb(0 0 0 / 20%), 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%);
+}
+
+td {
+  width: 100px;
+  height: 120px;
+  color: #00FFA7;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid whitesmoke;
+  text-shadow: 2px 2px 2px black;
+  -webkit-tap-highlight-color: blanchedalmond;
+}
+
+/* Remove Border for Edges */
+table tr:nth-child(1) td {
+  border-top: none;
+}
+
+table tr:nth-child(3) td {
+  border-bottom: none;
+}
+
+table tr td:first-child {
+  border-left: none;
+}
+
+table tr td:last-child {
+  border-right: none;
+}
+
+button {
+  padding: 10px;
+  height: 60px;
+  width: 80px;
+  border-radius: 7px;
+  color:white;
+  background-color: black;
+}
+
+button:hover {
+  background: #fff200;
+  box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+}
+.win{
+  width:100px;
+  margin-left: 700px;
+}
+.screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  width: 100vw;
+  color: whitesmoke;
+  display:flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.stats {
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.board {
+  align-self: center;
+}
+
+.controls {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 120px;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  border-top: 5px solid yellow;
+}

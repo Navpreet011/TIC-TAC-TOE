@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+
+  <title>GAME</title>
+
+  <!-- Custom Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <div class="screen">
+
+    <div class="heading">
+      TIC - TAC - TOE
+    </div>
+
+    <div class="stats">
+      <div id="one" class="highlight">
+        <label>Player</label>
+        <p>X</p>
+      </div>
+      <div id="two">
+        <label>Player</label>
+        <p>0</p>
+      </div>
+    </div>
+    <button class="win hidden"></button>
+    <table class="board">
+      <tr class="row-one">
+        <td onclick="playGame(event, 0)"></td>
+        <td onclick="playGame(event, 1)"></td>
+        <td onclick="playGame(event, 2)"></td>
+      </tr>
+      <tr class="row-two">
+        <td onclick="playGame(event, 3)"></td>
+        <td onclick="playGame(event, 4)"></td>
+        <td onclick="playGame(event, 5)"></td>
+      </tr>
+      <tr class="row-three">
+        <td onclick="playGame(event, 6)"></td>
+        <td onclick="playGame(event, 7)"></td>
+        <td onclick="playGame(event, 8)"></td>
+      </tr>
+    </table>
+
+    <div class="controls">
+      <button onclick="resetBoard()" id="reset-btn">Restart</button>
+      <button onclick="undoMove()" id="undo-btn">↺</button>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
